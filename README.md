@@ -28,4 +28,18 @@ Two different scripts are used to run FWI (either 2D slicewise or 3D FWI) and th
 2) [MultiFrequencyWaveformInvFromData3D.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/MultiFrequencyWaveformInvFromData3D.m) is used to run **3D FWI** and outputs the result into [results/results3D](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/tree/main/results/results3D).
 
 The key functions used in the FWI scripts above are: 
-1) 
+1) [solveHelmholtzBornSeries.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/solvers4FWI/solveHelmholtzBornSeries.m) uses the convergent Born series method to
+
+Please cite the following paper for the convergent Born series method:
+```BibTeX
+@article{saha2018machine,
+  title={A machine learning approach to radiogenomics of breast cancer: a study of 922 subjects and 529 DCE-MRI features},
+  author={Saha, Ashirbani and Harowicz, Michael R and Grimm, Lars J and Kim, Connie E and Ghate, Sujata V and Walsh, Ruth and Mazurowski, Maciej A},
+  journal={British journal of cancer},
+  volume={119},
+  number={4},
+  pages={508--516},
+  year={2018},
+  publisher={Nature Publishing Group UK London}
+}```
+
