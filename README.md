@@ -12,7 +12,7 @@ We provide sample data and algorithms presented in
 You can also reference a static version of this code by its DOI number:
 [![DOI](https://zenodo.org/badge/871745761.svg)](https://doi.org/10.5281/zenodo.13924218)
 
-In this work, our FWI algorithm relies on the [**convergent Born series method**](https://github.com/IvoVellekoop/wavesim) to efficiently solve the 2D and 3D Helmholtz equations for 2D slicewise and 3D FWI, respectively.  Please cite the following paper on the [**convergent Born series method**](https://github.com/IvoVellekoop/wavesim) from which our [solveHelmholtzBornSeries.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/solvers4FWI/solveHelmholtzBornSeries.m) and [solveHelmholtzBornSeries3D.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/solvers4FWI/solveHelmholtzBornSeries3D.m) functions were adapted:
+In this work, our FWI algorithm relies on the [**convergent Born series method**](https://github.com/IvoVellekoop/wavesim) to efficiently solve the 2D and 3D Helmholtz equations for 2D slicewise and 3D FWI, respectively.  Please also cite the following paper on the [**convergent Born series method**](https://github.com/IvoVellekoop/wavesim) from which our [solveHelmholtzBornSeries.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/solvers4FWI/solveHelmholtzBornSeries.m) and [solveHelmholtzBornSeries3D.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/solvers4FWI/solveHelmholtzBornSeries3D.m) functions were adapted:
 ```BibTeX
 @article{osnabrugge2016convergent,
   title={A convergent Born series for solving the inhomogeneous Helmholtz equation in arbitrarily large media},
