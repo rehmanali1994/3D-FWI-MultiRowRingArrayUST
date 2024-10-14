@@ -52,3 +52,7 @@ We recommend running this code with a beefy GPU that has lots of GPU RAM like th
 
 ## Sample Results
 
+For either the `LeftBreastMRI.mat` or `RightBreastMRI.mat` (`fileID = 1` or `fileID = 2` respectively), [Compare2Dvs3D.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/results/Compare2Dvs3D.m) loads the results of 2D slicewise and 3D FWI from the [results/results2D](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/tree/main/results/results2D) and [results/results3D](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/tree/main/results/results3D) folders. [Compare2Dvs3D.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/results/Compare2Dvs3D.m) will then display the ground truth sound speed (left), 2D slicewise FWI (middle), and 3D FWI (right) images for a given orthographic slice view: transverse (`viewID = 1`), sagittal (`viewID = 2`), and coronal (`viewID = 3`).  [Compare2Dvs3D.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/results/Compare2Dvs3D.m) also calculates the root-mean-square error (RMSE) and Pearson's correlation coefficient (PCC) with the ground truth sound speed image for both the 2D slicewise and 3D FWI reconstructions. 
+
+See the results below compiled across the k-Wave simulations of the left and right breast:
+![](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/results/3D_FWI_GitHub_Figure.png)
