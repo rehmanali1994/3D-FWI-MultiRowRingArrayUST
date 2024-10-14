@@ -21,11 +21,11 @@ The code used to run the [k-Wave](http://www.k-wave.org/) simulation involves a 
  The simulated data for each transmit is then stored in MAT files in the [Simulations/sim_data](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/tree/main/sim_data) folder.  At the end of [kWaveSimLauncher.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/kWaveSimLauncher.m), the function call to 
 [AssembleSimData.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/AssembleSimData.m) assembles the simulated data from each indivdual transmit/MAT-file in the [Simulations/sim_data](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/tree/main/sim_data) folder into a single MAT file (either _LeftBreastMRI.mat_ or _RightBreastMRI.mat_) containing the 3D UST dataset needed for FWI in the [datasets](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/tree/main/datasets) folder.  Note that the complete time-series data is too large to store in a single file for the full 3D dataset.  Instead, we extract only the frequencies listed in [kWaveSimLauncher.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/kWaveSimLauncher.m) to keep the file size for the full 3D dataset small. 
 
-## Code
+## Reconstruction Code
 
 Two different scripts are used to run FWI (either 2D slicewise or 3D FWI) and their results are compared:
-1) 2D slicewise FWI: [MultiFrequencyWaveformInvFromData.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/MultiFrequencyWaveformInvFromData.m)
-2) 3D FWI: [MultiFrequencyWaveformInvFromData3D.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/MultiFrequencyWaveformInvFromData3D.m)
+1) [MultiFrequencyWaveformInvFromData.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/MultiFrequencyWaveformInvFromData.m) is used to run **2D slicewise FWI** and outputs the result into [results/results2D](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/tree/main/results/results2D).
+2) [MultiFrequencyWaveformInvFromData3D.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/MultiFrequencyWaveformInvFromData3D.m) is used to run **3D FWI** and outputs the result into [results/results3D](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/tree/main/results/results3D).
 
 The key functions used in the FWI scripts ([MultiFrequencyWaveformInvFromData.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/MultiFrequencyWaveformInvFromData.m) and [MultiFrequencyWaveformInvFromData3D.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/MultiFrequencyWaveformInvFromData3D.m)) are:
 1) 
