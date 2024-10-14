@@ -12,6 +12,18 @@ We provide sample data and algorithms presented in
 You can also reference a static version of this code by its DOI number:
 [![DOI](https://zenodo.org/badge/871745761.svg)](https://doi.org/10.5281/zenodo.13924218)
 
+In this work, our FWI algorithm relies on the [convergent Born series method](https://github.com/IvoVellekoop/wavesim) to efficiently solve the 2D and 3D Helmholtz equations for 2D slicewise and 3D FWI, respectively.  Please cite the following paper on the [convergent Born series method](https://github.com/IvoVellekoop/wavesim) from which our [solveHelmholtzBornSeries.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/solvers4FWI/solveHelmholtzBornSeries.m) and [solveHelmholtzBornSeries3D.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/solvers4FWI/solveHelmholtzBornSeries3D.m) functions were adapted:
+```BibTeX
+@article{osnabrugge2016convergent,
+  title={A convergent Born series for solving the inhomogeneous Helmholtz equation in arbitrarily large media},
+  author={Osnabrugge, Gerwin and Leedumrongwatthanakun, Saroch and Vellekoop, Ivo M},
+  journal={Journal of computational physics},
+  volume={322},
+  pages={113--124},
+  year={2016},
+  publisher={Elsevier}
+}```
+
 ## k-Wave Simulation
 
 The code used to run the [k-Wave](http://www.k-wave.org/) simulation involves a 2-step process:
@@ -28,9 +40,11 @@ Two different scripts are used to run FWI (either 2D slicewise or 3D FWI) and th
 2) [MultiFrequencyWaveformInvFromData3D.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/MultiFrequencyWaveformInvFromData3D.m) is used to run **3D FWI** and outputs the result into [results/results3D](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/tree/main/results/results3D).
 
 The key functions used in the FWI scripts above are: 
-1) [solveHelmholtzBornSeries.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/solvers4FWI/solveHelmholtzBornSeries.m) uses the convergent Born series method to
+1) [solveHelmholtzBornSeries.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/solvers4FWI/solveHelmholtzBornSeries.m) uses the [convergent Born series method](https://github.com/IvoVellekoop/wavesim) to solve the 2D Helmholtz equation. This function is used in [MultiFrequencyWaveformInvFromData.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/MultiFrequencyWaveformInvFromData.m) to run **2D slicewise FWI**.
+2) [solveHelmholtzBornSeries3D.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/solvers4FWI/solveHelmholtzBornSeries3D.m) uses the [convergent Born series method](https://github.com/IvoVellekoop/wavesim) to solve the 3D Helmholtz equation. This function is used in [MultiFrequencyWaveformInvFromData3D.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/MultiFrequencyWaveformInvFromData3D.m) to run **3D FWI**,
+3) 
 
-Please cite the following paper for the convergent Born series method:
+Please cite the following paper for the [convergent Born series method](https://github.com/IvoVellekoop/wavesim):
 ```BibTeX
 @article{osnabrugge2016convergent,
   title={A convergent Born series for solving the inhomogeneous Helmholtz equation in arbitrarily large media},
