@@ -1,0 +1,1 @@
+[MultiFrequencyWaveformInvFromData.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/MultiFrequencyWaveformInvFromData.m) is used to run **2D slicewise FWI** and outputs the result into this folder ([results/results2D](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/tree/main/results/results2D)).
