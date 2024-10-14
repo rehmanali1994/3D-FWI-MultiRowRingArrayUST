@@ -1,5 +1,5 @@
 # 3D-FWI-MultiRowRingArrayUST
-3D Full-Waveform Inversion for a Multi-Row Ring-Array UST System SImulated in k-Wave
+3D Full-Waveform Inversion for a Multi-Row Ring-Array UST System Simulated in k-Wave
 
 Ultrasound tomography (UST) is a medical imaging system that uses the transmission of ultrasound through tissue to create images of the speed of sound.  Currently, UST is based on a single-row elevation-focused ring-array transducer.  This ring-array is translated vertically to reconstruct a series of 2D slices that are assembled into a 3D volume.  The main algorithm used to reconstruct these 2D slices is 2D frequency-domain full-waveform inversion (FWI): see our previous work on 2D slice-wise FWI ([rehmanali1994/WaveformInversionUST](https://github.com/rehmanali1994/WaveformInversionUST)).  
 
