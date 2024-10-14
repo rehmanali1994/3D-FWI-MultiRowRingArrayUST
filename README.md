@@ -25,7 +25,7 @@ In this work, our FWI algorithm relies on the [**convergent Born series method**
 }
 ```
 
-## k-Wave Simulation
+## Running k-Wave Simulations
 
 The code used to run the [k-Wave](http://www.k-wave.org/) simulation involves a 2-step process:
 
