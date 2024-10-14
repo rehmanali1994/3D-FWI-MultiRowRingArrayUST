@@ -25,7 +25,7 @@ In this work, our FWI algorithm relies on the [**convergent Born series method**
 }
 ```
 
-## Running k-Wave Simulations
+## Running the k-Wave Simulations
 
 The code used to run the [k-Wave](http://www.k-wave.org/) simulation involves a 2-step process:
 
@@ -50,5 +50,5 @@ The key functions used in the FWI scripts above are:
 
 We recommend running this code with a beefy GPU that has lots of GPU RAM like the NVIDIA RTX A6000 (48 GB GDDR6) or the NVIDIA GeForce RTX 4090 (24 GB GDDR6) so that you can keep the `NUM_BATCHES` in [MultiFrequencyWaveformInvFromData3D.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/MultiFrequencyWaveformInvFromData3D.m) as small as possible.  **Even more importantly, your computer will need lots of CPU RAM (minimum 256 GB) just to store intermediate variables for 3D FWI.**
 
-
+## Sample Results
 
