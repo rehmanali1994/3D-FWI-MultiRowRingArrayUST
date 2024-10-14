@@ -1,0 +1,1 @@
+To conserve space, the traces simulated for each transmit are Fourier transformed, and the scripts in the [visualization](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/tree/main/visualization) folder can be used to visualize the time-domain data for each transmit. 
