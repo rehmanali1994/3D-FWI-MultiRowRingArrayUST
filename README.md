@@ -27,5 +27,5 @@ Two different scripts are used to run FWI (either 2D slicewise or 3D FWI) and th
 1) [MultiFrequencyWaveformInvFromData.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/MultiFrequencyWaveformInvFromData.m) is used to run **2D slicewise FWI** and outputs the result into [results/results2D](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/tree/main/results/results2D).
 2) [MultiFrequencyWaveformInvFromData3D.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/MultiFrequencyWaveformInvFromData3D.m) is used to run **3D FWI** and outputs the result into [results/results3D](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/tree/main/results/results3D).
 
-The key functions used in the FWI scripts ([MultiFrequencyWaveformInvFromData.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/MultiFrequencyWaveformInvFromData.m) and [MultiFrequencyWaveformInvFromData3D.m](https://github.com/rehmanali1994/3D-FWI-MultiRowRingArrayUST/blob/main/MultiFrequencyWaveformInvFromData3D.m)) are: 
+The key functions used in the FWI scripts above are: 
 1) 
