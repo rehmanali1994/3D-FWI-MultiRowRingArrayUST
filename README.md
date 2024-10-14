@@ -32,14 +32,13 @@ The key functions used in the FWI scripts above are:
 
 Please cite the following paper for the convergent Born series method:
 ```BibTeX
-@article{saha2018machine,
-  title={A machine learning approach to radiogenomics of breast cancer: a study of 922 subjects and 529 DCE-MRI features},
-  author={Saha, Ashirbani and Harowicz, Michael R and Grimm, Lars J and Kim, Connie E and Ghate, Sujata V and Walsh, Ruth and Mazurowski, Maciej A},
-  journal={British journal of cancer},
-  volume={119},
-  number={4},
-  pages={508--516},
-  year={2018},
-  publisher={Nature Publishing Group UK London}
+@article{osnabrugge2016convergent,
+  title={A convergent Born series for solving the inhomogeneous Helmholtz equation in arbitrarily large media},
+  author={Osnabrugge, Gerwin and Leedumrongwatthanakun, Saroch and Vellekoop, Ivo M},
+  journal={Journal of computational physics},
+  volume={322},
+  pages={113--124},
+  year={2016},
+  publisher={Elsevier}
 }```
 
