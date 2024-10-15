@@ -93,17 +93,17 @@ updateBornSeries = @(wvf) wvf-gamm.*(wvf-G(V.*wvf-src)); % Born-Series Update
 for it = 1:max_iterations
     % Convergent Born Series Solution 
     wvfield = updateBornSeries(wvfield); % Update wavefield
-    % Show Propagation
-    elmt_idx = 1;
-    slice_z_idx = 64; % which element's wavefield to show
-    Eshow = wvfield(:,:,slice_z_idx,elmt_idx);
-    Eshow = real(squeeze(Eshow));
-    imagesc(x,y,Eshow,[-1,1]*(1e-15));
-    title(['wavefiled solution Iter = ', num2str(it)]);
-    axis square; colorbar;
-    xlabel('x (\lambda)','FontSize',16);
-    ylabel('y (\lambda)','FontSize',16);
-    set(gca,'FontSize',14); drawnow;
+%    % Show Propagation
+%    elmt_idx = 1;
+%    slice_z_idx = 64; % which element's wavefield to show
+%    Eshow = wvfield(:,:,slice_z_idx,elmt_idx);
+%    Eshow = real(squeeze(Eshow));
+%    imagesc(x,y,Eshow,[-1,1]*(1e-15));
+%    title(['wavefiled solution Iter = ', num2str(it)]);
+%    axis square; colorbar;
+%    xlabel('x (\lambda)','FontSize',16);
+%    ylabel('y (\lambda)','FontSize',16);
+%    set(gca,'FontSize',14); drawnow;
 end
 
 % Compute [dH/ds u] where H is Helmholtz matrix and u is the wavefield
