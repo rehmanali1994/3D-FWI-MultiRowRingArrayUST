@@ -208,10 +208,10 @@ for f_idx = 1:numel(fDATA)
         ATTEN_ESTIM = 2*pi*imag(SLOW_ESTIM)*sign(sign_conv);
         % Visualize Numerical Solution - Plot Final Reconstructions
         rx_row = 16;
-        subplot(1,3,1); imagesc(xi,yi,VEL_ESTIM(:,:,z_idx(rx_row,1)),crange);
+        subplot(1,2,1); imagesc(xi,yi,VEL_ESTIM(:,:,z_idx(rx_row,1)),crange);
         title(['Estimated Wave Velocity ', num2str(iter)]); axis image;
         xlabel('Lateral [m]'); ylabel('Axial [m]'); colorbar; colormap gray;
-        subplot(1,3,2); imagesc(xsim,ysim,VEL_TRUE(:,:,z_idx(rx_row,1)),crange);
+        subplot(1,2,2); imagesc(xsim,ysim,VEL_TRUE(:,:,z_idx(rx_row,1)),crange);
         title('True Wave Velocity'); axis image;
         xlabel('Lateral [m]'); ylabel('Axial [m]'); colorbar; colormap gray;
         disp(['Iteration ', num2str(iter)]); subplot(1,3,3); toc;
