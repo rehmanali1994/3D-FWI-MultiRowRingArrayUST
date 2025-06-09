@@ -5,7 +5,7 @@ Ultrasound tomography (UST) is a medical imaging system that uses the transmissi
 
 In this work, we extend the ring-array geometry to multiple rows of elements.  We simulate a 22-cm diameter ring array with 32 rows of 256 elements placed circumferentially around the ring (2.4 mm between each row).  By emitting cylindrical-wave transmits from this multi-row ring array, we can keep the number of transmisssions to a minimum while still capturing the full 3D insonification needed to reconstruct the full volume.  With this imaging geometry, 2D FWI can be applied to each row of receive elements to reconstruct an image slice for each row.  Here, we compare 3D FWI to 2D slicewise FWI in numerical breast phantoms.  
 
-We provide sample data and algorithms presented in the [open-access IEEE OJ-UFFC letters paper](https://ieeexplore.ieee.org/abstract/document/11003981) cited below
+We provide sample data and algorithms presented in the [open-access IEEE OJ-UFFC letters paper](https://ieeexplore.ieee.org/abstract/document/11003981) with BibTeX reference below
 ```BibTeX
 @article{ali20253d,
   title={3D Frequency-Domain Full Waveform Inversion for Whole-Breast Imaging with a Multi-Row Ring Array},
